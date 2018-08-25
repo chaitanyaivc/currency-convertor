@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Conversion</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="currency1.css">
+	<script src="currency-convertor.js"></script>
+</head>
+<body onload="loadCurrencies()">
+	<div class="container main-panel">
+		<div class="col-md-offset-4 col-md-4 panel">
+			<div class="row header">
+				Currency Convertor
+			</div>
+			<div class="row">
+				<div class="col-md-2">Amount:</div>
+				<div class="col-md-10">
+					<input type="text" oninput="convertCurrency()" class="form-control" id="amount"></input>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">From:</div>
+				<div class="col-md-4"><select oninput="convertCurrency()" id="from"></select></div>
+				<div class="col-md-2">To:</div>
+				<div class="col-md-4"><select oninput="convertCurrency()" id="to"></select></div>
+			</div>
+			<div class="row">
+				Result: <span id=result></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

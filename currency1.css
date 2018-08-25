@@ -1,0 +1,17 @@
+.main-panel{
+	margin-top: 200px;
+}
+
+div.row{
+	padding: 10px;
+}
+
+.header{
+	background-color: #800033;
+	color: white;
+	font-weight: bold;
+}
+
+.panel{
+	border-color: #800033;
+}
